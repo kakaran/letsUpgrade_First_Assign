@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#Container
+{
+    width: 900px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+
+.card{
+    background-color: #E28525;
+    padding: 30px;
+    font-size: 14px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.card:nth-child(2)
+{
+    border-radius: 0px;
+    background-color: #016972;
+}
+
+.card:nth-child(3){
+    border-radius: 0px 10px 10px 0px;
+    background-color: #00403F;
+}
+
+h1{
+    color: white;
+}
+
+p{
+    color: white;
+    width: 200px;
+}
+
+button
+{
+    border-radius: 20px;
+    color: #E28525;
+    width: 150px;
+    background-color: white;
+    padding: 10px 20px ;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    box-shadow: rgba(241, 237, 237, 0.06) 0px 2px 4px 0px inset;
+}
+
+@media (max-width : 950px) {
+    #Container{
+        flex-direction: column;
+        margin: auto;
+        width: 500px;
+    }
+
+    .card{
+        border-radius: 10px 10px 0px 0px;
+        height: 200px;
+        width: 200px;
+        gap: 30px;
+    }
+    .card:nth-child(3){
+        border-radius: 0px 0px 10px 10px ;
+    }
+    
+}
